@@ -1,5 +1,15 @@
 {
- "rewrrites": [
-   {"source": "/(.*)", "destination": "/"}
- ] 
+  "version": 2,
+  "builds": [
+    {
+      "src": "MRSPWEB.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "MRSPWEB.py"
+    }
+  ]
 }
